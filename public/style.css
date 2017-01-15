@@ -1,0 +1,42 @@
+body {
+  background-color: #000;
+  display: block;
+}
+
+p {
+  font-family: verdana, helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+.caesar {
+  margin: 0 auto;
+  width: 519px;
+  display: inherit;
+}
+
+.shift_number {
+  width: 50;
+  text-align: right;
+}
+
+.shift_text {
+  width: 250;
+  text-align: center;
+}
+
+.interactive_content {
+  margin: -850 auto;
+  padding-left: 15px;
+  display: inherit;
+  width: 430;
+}
+
+.cipher_form {
+  margin: 0 auto;
+  width: 310px;
+}
+
+.button {
+  font-family: verdana, helvetica, arial, sans-serif;
+  margin: 5
+}

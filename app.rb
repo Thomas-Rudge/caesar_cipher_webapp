@@ -3,5 +3,12 @@ require 'sinatra/reloader'
 require_relative 'lib/caesar'
 
 get "/" do
-  erb :index
+  inputs = [params["text"], params["shift"].to_i]
+  output = ""
+
+  unless inputs[0].nil? || inputs[0].empty?
+    output = cipher(*inputs)
+  end
+
+  erb :index, :locals=>{:cipher=>output}
 end

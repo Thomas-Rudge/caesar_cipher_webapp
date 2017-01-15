@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="<%= url("/style.css")%>"/>
+  </head>
+  <body>
+    <img class=caesar src="<%= url("/caesar.png")%>"/>
+    <div class=interactive_content>
+      <p>
+        Enter text to be ciphered, and the shift value.
+      </p>
+      <form class=cipher_form>
+        <input class=shift_text type='text' name='text' />
+        <input class=shift_number type="number" name='shift' value="10">
+        <input class=button type='submit' value='Go' />
+      </form>
+      <p>
+        <%= cipher %>
+      </p>
+    </div>
+  </body>
+</html>
